@@ -1,0 +1,10 @@
+Plugin Name: Footer Content
+Author: Andrew Billits
+
+Files:
+----------------------------------------------------------------------
+footer-content.php - goes in /wp-content/mu-plugins
+
+Instructions:
+----------------------------------------------------------------------
+1) Place the files in the specified directories
