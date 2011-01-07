@@ -3,10 +3,10 @@
 Plugin Name: Footer Content
 Plugin URI: http://premium.wpmudev.org/project/footer-content
 Description: This plugin allows blog administrators to add their own content to the footer of every page on their blog
-Author: Andrew Billits (Incsub)
-Version: 1.0.1
+Author: S H Mohanjith (Incsub), Andrew Billits (Incsub)
+Version: 1.0.2
 Author URI: http://premium.wpmudev.org/
-WPID: 76
+WDP ID: 76
 */
 
 /* 
