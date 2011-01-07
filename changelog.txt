@@ -1,5 +1,5 @@
 Plugin Name: Footer Content
-Author: Andrew Billits
+Author: S H Mohanjith (Incsub), Andrew Billits (Incsub)
 
 Change Log:
 ----------------------------------------------------------------------

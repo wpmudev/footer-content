@@ -6,7 +6,7 @@ Description: This plugin allows blog administrators to add their own content to 
 Author: Andrew Billits (Incsub)
 Version: 1.0.1
 Author URI: http://premium.wpmudev.org/
-WDP ID: 76
+WPID: 76
 */
 
 /* 
