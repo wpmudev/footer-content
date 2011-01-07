@@ -1,0 +1,81 @@
+# Translation of the WordPress plugin Footer Content 1.0.1 by Andrew Billits (Incsub).
+# Copyright (C) 2011 Andrew Billits (Incsub)
+# This file is distributed under the same license as the Footer Content package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Footer Content 1.0.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/footer-content\n"
+"POT-Creation-Date: 2011-01-07 16:47+0530\n"
+"PO-Revision-Date: 2011-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. #-#-#-#-#  footer-content.pot (Footer Content 1.0.1)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: footer-content.php:56 footer-content.php:79 footer-content.php:84
+msgid "Footer Content"
+msgstr ""
+
+#: footer-content.php:68
+msgid "Nice Try..."
+msgstr ""
+
+#: footer-content.php:80
+msgid ""
+"The footer content is displayed at the bottom of every page on your blog"
+msgstr ""
+
+#: footer-content.php:87
+msgid "HTML allowed"
+msgstr ""
+
+#: footer-content.php:92
+msgid "Save Changes"
+msgstr ""
+
+#: footer-content.php:93
+msgid "Reset"
+msgstr ""
+
+#: footer-content.php:104
+msgid "Settings cleared."
+msgstr ""
+
+#: footer-content.php:111
+msgid "Settings saved."
+msgstr ""
+
+#: footer-content.php:130
+msgid ""
+"Please install the latest version of <a href=\"http://premium.wpmudev.org/"
+"project/update-notifications/\" title=\"Download Now &raquo;\">our free "
+"Update Notifications plugin</a> which helps you stay up-to-date with the "
+"most stable, secure versions of WPMU DEV themes and plugins. <a href="
+"\"http://premium.wpmudev.org/wpmu-dev/update-notifications-plugin-"
+"information/\">More information &raquo;</a>"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://premium.wpmudev.org/project/footer-content"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"This plugin allows blog administrators to add their own content to the "
+"footer of every page on their blog"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Andrew Billits (Incsub)"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://premium.wpmudev.org/"
+msgstr ""
