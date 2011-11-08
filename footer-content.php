@@ -7,6 +7,7 @@ Author: S H Mohanjith (Incsub), Andrew Billits (Incsub)
 Version: 1.0.2
 Author URI: http://premium.wpmudev.org/
 WDP ID: 76
+Text Domain: footer_content
 */
 
 /* 
