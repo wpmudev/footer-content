@@ -4,7 +4,7 @@ Plugin Name: Footer Content
 Plugin URI: http://premium.wpmudev.org/project/footer-content
 Description: This plugin allows blog administrators to add their own content to the footer of every page on their blog
 Author: S H Mohanjith (Incsub), Andrew Billits (Incsub)
-Version: 1.0.2
+Version: 1.0.2.1
 Author URI: http://premium.wpmudev.org/
 WDP ID: 76
 Text Domain: footer_content
@@ -53,9 +53,7 @@ function footer_content_output() {
 
 function footer_content_plug_pages() {
 	global $wpdb, $wp_roles, $current_user;
-	if ( is_site_admin() ) {
-		add_submenu_page('themes.php', __('Footer Content', 'footer_content'), __('Footer Content', 'footer_content'), 10, 'footer-content', 'footer_content_page_output');
-	}
+	add_submenu_page('themes.php', __('Footer Content', 'footer_content'), __('Footer Content', 'footer_content'), 'manage_options', 'footer-content', 'footer_content_page_output');
 }
 
 //------------------------------------------------------------------------//
@@ -73,7 +71,8 @@ function footer_content_page_output() {
 		?><div id="message" class="updated fade"><p><?php _e(urldecode($_GET['updatedmsg']), 'footer_content') ?></p></div><?php
 	}
 	echo '<div class="wrap">';
-	switch( $_GET[ 'action' ] ) {
+	$action = isset($_GET[ 'action' ]) ? $_GET[ 'action' ] : '';
+	switch( $action ) {
 		//---------------------------------------------------//
 		default:
 			?>
