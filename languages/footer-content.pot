@@ -1,58 +1,53 @@
-# Translation of the WordPress plugin Footer Content 1.0.1 by Andrew Billits (Incsub).
-# Copyright (C) 2011 Andrew Billits (Incsub)
+# Copyright (C) 2013 Footer Content
 # This file is distributed under the same license as the Footer Content package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Footer Content 1.0.1\n"
+"Project-Id-Version: Footer Content 1.0.2.2\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/footer-content\n"
-"POT-Creation-Date: 2011-01-07 16:47+0530\n"
-"PO-Revision-Date: 2011-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2013-10-15 07:25:54+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
 
-#. #-#-#-#-#  footer-content.pot (Footer Content 1.0.1)  #-#-#-#-#
+#. #-#-#-#-#  footer-content.pot (Footer Content 1.0.2.2)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
-#: footer-content.php:56 footer-content.php:79 footer-content.php:84
+#: footer-content.php:53 footer-content.php:76 footer-content.php:81
 msgid "Footer Content"
 msgstr ""
 
-#: footer-content.php:68
+#: footer-content.php:64
 msgid "Nice Try..."
 msgstr ""
 
-#: footer-content.php:80
+#: footer-content.php:77
 msgid ""
 "The footer content is displayed at the bottom of every page on your blog"
 msgstr ""
 
-#: footer-content.php:87
+#: footer-content.php:84
 msgid "HTML allowed"
 msgstr ""
 
-#: footer-content.php:92
+#: footer-content.php:89
 msgid "Save Changes"
 msgstr ""
 
-#: footer-content.php:93
+#: footer-content.php:90
 msgid "Reset"
 msgstr ""
 
-#: footer-content.php:104
+#: footer-content.php:101
 msgid "Settings cleared."
 msgstr ""
 
-#: footer-content.php:111
+#: footer-content.php:108
 msgid "Settings saved."
 msgstr ""
 
-#: footer-content.php:130
+#: footer-content.php:127
 msgid ""
 "Please install the latest version of <a href=\"http://premium.wpmudev.org/"
 "project/update-notifications/\" title=\"Download Now &raquo;\">our free "
@@ -73,7 +68,7 @@ msgid ""
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Andrew Billits (Incsub)"
+msgid "S H Mohanjith (Incsub), Andrew Billits (Incsub)"
 msgstr ""
 
 #. Author URI of the plugin/theme
