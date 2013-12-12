@@ -4,13 +4,13 @@ Plugin Name: Footer Content
 Plugin URI: http://premium.wpmudev.org/project/footer-content
 Description: This plugin allows blog administrators to add their own content to the footer of every page on their blog
 Author: S H Mohanjith (Incsub), Andrew Billits (Incsub)
-Version: 1.0.2.2
+Version: 1.0.2.3
 Author URI: http://premium.wpmudev.org/
 WDP ID: 76
 Text Domain: footer_content
 */
 
-/* 
+/*
 Copyright 2007-2009 Incsub (http://incsub.com)
 
 This program is free software; you can redistribute it and/or modify
@@ -26,6 +26,10 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
+
+global $wpmudev_notices;
+$wpmudev_notices[] = array( 'id'=> 76, 'name'=> 'Footer Content', 'screens' => array( 'appearance_page_footer-content' ) );
+include_once(plugin_dir_path( __FILE__ ).'external/dash-notice/wpmudev-dash-notification.php');
 
 //------------------------------------------------------------------------//
 //---Hook-----------------------------------------------------------------//
@@ -59,7 +63,7 @@ function footer_content_plug_pages() {
 
 function footer_content_page_output() {
 	global $wpdb, $wp_roles, $current_user;
-	
+
 	if(!current_user_can('manage_options')) {
 		echo "<p>" . __('Nice Try...', 'footer_content') . "</p>";  //If accessed properly, this message doesn't appear.
 		return;
@@ -84,10 +88,10 @@ function footer_content_page_output() {
             <br /><?php _e('HTML allowed', 'footer_content') ?></td>
             </tr>
             </table>
-            
+
             <p class="submit">
-            <input type="submit" name="Submit" value="<?php _e('Save Changes', 'footer_content') ?>" />
-			<input type="submit" name="Reset" value="<?php _e('Reset', 'footer_content') ?>" />
+            <input class="button button-primary" type="submit" name="Submit" value="<?php _e('Save Changes', 'footer_content') ?>" />
+			<input class="button button-secondary" type="submit" name="Reset" value="<?php _e('Reset', 'footer_content') ?>" />
             </p>
             </form>
 			<?php
@@ -100,7 +104,7 @@ function footer_content_page_output() {
 				<SCRIPT LANGUAGE='JavaScript'>
 				window.location='themes.php?page=footer-content&updated=true&updatedmsg=" . urlencode(__('Settings cleared.', 'footer_content')) . "';
 				</script>
-				";			
+				";
 			} else {
 				update_option( "footer_content", stripslashes($_POST[ 'footer_content' ]) );
 				echo "
@@ -116,14 +120,4 @@ function footer_content_page_output() {
 		//---------------------------------------------------//
 	}
 	echo '</div>';
-}
-
-if ( !function_exists( 'wdp_un_check' ) ) {
-	add_action( 'admin_notices', 'wdp_un_check', 5 );
-	add_action( 'network_admin_notices', 'wdp_un_check', 5 );
-
-	function wdp_un_check() {
-		if ( !class_exists( 'WPMUDEV_Update_Notifications' ) && current_user_can( 'edit_users' ) )
-			echo '<div class="error fade"><p>' . __('Please install the latest version of <a href="http://premium.wpmudev.org/project/update-notifications/" title="Download Now &raquo;">our free Update Notifications plugin</a> which helps you stay up-to-date with the most stable, secure versions of WPMU DEV themes and plugins. <a href="http://premium.wpmudev.org/wpmu-dev/update-notifications-plugin-information/">More information &raquo;</a>', 'wpmudev') . '</a></p></div>';
-	}
 }
