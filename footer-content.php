@@ -27,10 +27,6 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-global $wpmudev_notices;
-$wpmudev_notices[] = array( 'id'=> 76, 'name'=> 'Footer Content', 'screens' => array( 'appearance_page_footer-content' ) );
-include_once(plugin_dir_path( __FILE__ ).'external/dash-notice/wpmudev-dash-notification.php');
-
 //------------------------------------------------------------------------//
 //---Hook-----------------------------------------------------------------//
 //------------------------------------------------------------------------//
@@ -121,3 +117,7 @@ function footer_content_page_output() {
 	}
 	echo '</div>';
 }
+
+global $wpmudev_notices;
+$wpmudev_notices[] = array( 'id'=> 76, 'name'=> 'Footer Content', 'screens' => array( 'appearance_page_footer-content' ) );
+include_once(plugin_dir_path( __FILE__ ).'external/dash-notice/wpmudev-dash-notification.php');
