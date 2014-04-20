@@ -62,6 +62,8 @@ function footer_content_plug_pages() {
 
 function footer_content_customize_register($wp_customize) {
 
+	require_once 'lib/footer-content-customize-textarea-control.php';
+	
 	$wp_customize->add_setting( 'footer_content' , array(
     		'transport'   => 'refresh',
 	) );
@@ -71,7 +73,7 @@ function footer_content_customize_register($wp_customize) {
     		'priority'   => 100,
 	) );
 	
-	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'footer_content', array(
+	$wp_customize->add_control( new Footer_Content_Customize_Textarea_Control( $wp_customize, 'footer_content', array(
 		'label'		=> __( 'Footer Content', 'mytheme' ),
 		'section'	=> 'footer_content_section',
 		'settings'	=> 'footer_content',
@@ -130,7 +132,7 @@ function footer_content_page_output() {
 			if ( isset( $_POST[ 'Reset' ] ) ) {
 				update_option( "footer_content", "" );
 				echo "
-				<script type="text/javascript">
+				<script type='text/javascript'>
 				window.location='themes.php?page=footer-content&updated=true&updatedmsg=" . urlencode(__('Settings cleared.', 'footer_content')) . "';
 				</script>
 				";
@@ -142,7 +144,7 @@ function footer_content_page_output() {
 					update_option( "footer_content", $footer_content );
 				}
 				echo "
-				<script type="text/javascript">
+				<script type='text/javascript'>
 				window.location='themes.php?page=footer-content&updated=true&updatedmsg=" . urlencode(__('Settings saved.', 'footer_content')) . "';
 				</script>
 				";
